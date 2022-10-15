@@ -774,7 +774,6 @@ main {
 }
 
 /******************************* Menu page css ********************/
-
 .menu {
   background-color: var(--white-color);
   display: flex;
@@ -785,7 +784,6 @@ main {
 .menu__option {
   width: 385px;
   margin-left: 80px;
-  /* border: 2px solid black; */
 }
 
 .menu__option li {
@@ -805,11 +803,35 @@ main {
   line-height: 25px;
 }
 
-.menu__list {
-  /* width: 955px; */
-  padding-right: 5em;
+/* Sidebar menu */
+.sidebar-menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-inline: 16px;
+  padding: 8px;
+  margin-top: 32px;
+}
 
-  /* outline: 2px solid green; */
+.sidebar-menu li {
+  border-bottom: 2px solid var(--lighter-gray);
+  margin-bottom: 28px;
+}
+
+.sidebar-menu a {
+  font-family: var(--body-font);
+  padding: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  color: var(--light-gray);
+}
+/* End of the sidebar menu */
+
+.menu__list {
+  padding-right: 5em;
 }
 
 .menu__list-design {
@@ -932,8 +954,6 @@ span.see-more img {
   display: flex;
   align-items: center;
   gap: 8px;
-
-  /* margin-bottom: 89px; */
 }
 
 span.info {
@@ -958,7 +978,6 @@ span.info {
   justify-content: center;
   margin-inline: 24px;
   margin-bottom: 22px;
-
   margin-top: 16px;
 }
 
@@ -998,7 +1017,6 @@ span.info {
 .drinks__list--all img {
   display: block;
   padding: 8px;
-
   min-width: 289px;
   min-height: 260px;
 }
@@ -1144,6 +1162,10 @@ span.info {
 
 /* ********************** Smaller screens all pages *******************/
 @media screen and (max-width: 375px) {
+  .sidebar-menu {
+    display: flex;
+  }
+
   .menu {
     margin-top: 16px;
   }
