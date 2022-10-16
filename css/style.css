@@ -899,7 +899,6 @@ span.see-more img {
 .menu__list-sides--all > *,
 .menu__list-drinks--all > * {
   width: 305px;
-  /* height: 442px; */
   background: #ffffff;
   border-radius: 8px;
   -webkit-filter: drop-shadow(2px 2px 12px rgba(0, 0, 0, 0.08));
@@ -1255,5 +1254,54 @@ span.info {
 
   .hide-list {
     display: none;
+  }
+}
+
+/* ********************** ipad  screen  *******************/
+@media screen and (min-width: 600px) and (max-width: 834px) {
+  .hamburger__menu__active {
+    width: 488px !important;
+  }
+
+  .hamburger__menu__main {
+    width: auto;
+  }
+
+  .hamburger__menu__help {
+    width: 100%;
+  }
+
+  .hamburger__form__section {
+    width: 100%;
+  }
+
+  .hamburger__login__btn {
+    width: 456px;
+  }
+
+  .menu__list-soups--all,
+  .menu__list-swallow--all,
+  .menu__list-rice__pasta--all,
+  .menu__list-protein--all,
+  .menu__list-sides--all,
+  .menu__list-drinks--all {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .btn__cta {
+    width: 70%;
+    margin-inline: auto;
+  }
+
+  /* Individual pages */
+  .soup__list--all,
+  .swallow__list--all,
+  .ricePasta__list--all,
+  .protein__list--all,
+  .sides__list--all,
+  .drinks__list--all {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
